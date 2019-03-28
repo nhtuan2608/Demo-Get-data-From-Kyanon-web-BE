@@ -20,7 +20,7 @@ const Data = () => (
       if (error) return <p>Error :(</p>;
       return data.pages.map((pages,pageName,url,fullUrl,typeLayout) => (
         <div key={pages}>
-          <p>{`${pages.pageName} by ${pages.url}`}</p>
+          <p>{`${pages.pageName} by ${pages.url}, ${pages.fullUrl}, ${pages.typeLayout}`}</p>
         </div>
       ));
     }}
